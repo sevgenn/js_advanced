@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Burger</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+    <div class="container">
+        <h1 class="col-4 mx-auto" style="padding-top: 40px">Choose your burger</h1>
+        <div class="list-group size" style="padding-top: 20px">
+            <label class="list-group-item list-group-item-action active">
+                <p>Size</p>
+            </label>
+            <label class="list-group-item">
+                <input class="form-check-input me-1" name="size" type="radio" data-price="100" data-cal="40" value="large" checked>
+                Large
+            </label>
+            <label class="list-group-item">
+                <input class="form-check-input me-1" name="size" type="radio" data-price="50" data-cal="20" value="small">
+                Small
+            </label>
+        </div><!-- size -->
+
+        <div class="list-group stuffing" style="padding-top: 20px">
+            <form action="">
+                <label class="list-group-item list-group-item-action active">
+                    <p>Stuffings</p>
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" name="stuffing" type="radio" data-price="10" data-cal="20" value="cheese" checked>
+                    Cheese
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" name="stuffing" type="radio" data-price="20" data-cal="5" value="salad">
+                    Salad
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" name="stuffing" type="radio" data-price="15" data-cal="10" value="potato">
+                    Potato
+                </label>
+            </form>
+        </div><!-- stuffings -->
+
+        <div class="list-group toppings" style="padding-top: 20px">
+            <label class="list-group-item list-group-item-action active">
+                <p>Toppings</p>
+            </label>
+            <label class="list-group-item">
+                <input class="form-check-input me-1" name="topping" type="checkbox" data-price="15" data-cal="0" value="spice">
+                Spice
+            </label>
+            <label class="list-group-item">
+                <input class="form-check-input me-1" name="topping" type="checkbox" data-price="20" data-cal='5' value="mayonnaise">
+                Mayonnaise
+            </label>
+        </div><!-- toppings -->
+
+        <div class="d-grid gap-2 col-4 mx-auto" style="padding-top: 20px">
+            <button class="btn btn-primary" type="button">Place an order</button>
+        </div>
+
+        <ul class="list-group col-4 mx-auto" style="padding-top: 20px">
+            <li class="list-group-item">Price: <span id="price"></span></li>
+            <li class="list-group-item">Calories: <span id="calories"></span></li>
+        </ul>
+
+    </div><!-- container -->
+
+<script src="burger.js"></script>
+</body>
+</html>
