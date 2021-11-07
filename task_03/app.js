@@ -43,18 +43,18 @@ class ProductItem {
 
     render() {
         return `<div class="col">
-                <div class="card text-center h-100">
-                    <img src="${this.image}" class="card-img-top" alt="${this.product_name}">
-                    <div class="card-body">
-                        <h5 class="card-title">${this.product_name}</h5>
-                        <!--<p class="card-text">${this.description}</p>-->
-                        <p>Цена <span>${this.price}</span> руб.</p>
-                        <button class="btn btn-buy btn-primary"
-                            data-id="this.id" data-price="this.price" data-name="this.product_name">Купить
-                        </button>
+                    <div class="card text-center h-100">
+                        <img src="${this.image}" class="card-img-top" alt="${this.product_name}">
+                        <div class="card-body">
+                            <h5 class="card-title">${this.product_name}</h5>
+                            <!--<p class="card-text">${this.description}</p>-->
+                            <p>Цена <span>${this.price}</span> руб.</p>
+                            <button class="btn btn-buy btn-primary"
+                                data-id="this.id" data-price="this.price" data-name="this.product_name">Купить
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </div>`;
+                </div>`;
     }
 }
 

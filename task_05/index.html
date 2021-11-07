@@ -40,8 +40,8 @@
                         <div class="cart-item" v-for="item of cartItems" :key="item.id_product">
                             <div class="product-cart">
                                 <h5 class="product-name">{{ item.product_name }}</h5>
-                                <p class="product-price">{{ item.price }} шт.</p>
-                                <p class="product-quantity">{{ item.quantity }} руб.</p>
+                                <p class="product-price">{{ item.price }} руб.</p>
+                                <p class="product-quantity">{{ item.quantity }} шт.</p>
                             </div>
                             <div class="product-info">
                                 <p class="total-sum">{{ item.price * item.quantity }} руб.</p>

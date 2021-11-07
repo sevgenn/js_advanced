@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.search-form {
+    display: flex;
+}
+
+#search {
+    display: inline-block;
+}
+
+.btn-cart {
+    margin-left: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.cart-block {
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    min-height: 100px;
+    min-width: 302px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    background-color: blanchedalmond;
+}
+
+.row {
+    margin-top: 20px;
+}
